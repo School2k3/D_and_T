@@ -1,0 +1,44 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 3000px;
+
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    
+}
+#menu-top{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0%;
+   
+}
+#menu-below{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin-top: 0%;
+}
+#menu-top-center{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    margin-left: 500px;
+    
+
+}
+#menu-top-right{
+
+    display: flex;
+    width: 30%;
+    margin-left: 200px;
+    align-items: center;
+    padding: 40px;
+}
