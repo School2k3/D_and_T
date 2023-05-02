@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="./js/products.js"></script>              
-    <script src="./js/home.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -24,13 +23,20 @@
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">News</a></li>
                     </ul>
-                    <div class="block"><img class="logo" src="./figma/logo.png" alt=""></div>
+                    
                 </div>
-                
+                <div><img class="logo" src="./figma/logo.png" alt=""></div>
                 <div class="menu-right">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="ti-search"></span></a></li>
-                        <li><a href="#"><span class="ti-user"></span></a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="ti-user"></span>
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Sign in</a></li>
+                                <li><a href="#">Sign up</a></li>
+                            </ul>
+                            </li>
                         <li><a href="#"><span class="ti-shopping-cart"></span></a></li>
                     </ul>
                 </div>
@@ -201,19 +207,11 @@
                         </li> -->
                         
                     </ul>
-    
-    
-    
-    
-    
-    
                 </div>
                 <div id="outstanding">
                     <h3 class="headline2">Outstanding Brand</h3>
                     <ul class="outstanding-menu">
                         <li id="Gucci">Gucci
-                            
-    
                         </li>
                         <li id="Balenciaga">Balenciaga</li>
                         <li id="Versace">Versace</li>
@@ -301,12 +299,6 @@
                                     <a href="" class="product-name">Butterfly Pattern Coat</a>
                                     <div class="product-price">$16.0</div>
                                 </div>
-    
-    
-    
-    
-    
-    
                             </div>
     
                         </li>
@@ -382,12 +374,74 @@
     
                         </div>
                     </div>
+                    <div class="blog-note mt-24px">
+                        <div class="blog-note-1">
+                            <span class="ti-reload"></span>
+                            <span>Refund within 3 days</span>
+                        </div>
+                        <div class="blog-note-2">
+                            <span class="ti-truck"></span>
+                            <span>Free shipping on orders over $50</span>
+                        </div>
+                        <div class="blog-note-3">
+                            <span class="ti-reload"></span>
+                            <span>Help: 0828012868</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="footer">
-
+            <div class="col-md-4">
+                <img class="footer-logo" src="./figma/logo.png" alt="">
+                <ul class="footer-reference">
+                    <li>CS1: Tầng 6, 266 Đội Cấn, Ba Đình, Hà Nội</li>
+                    <li>Hotline: <a class="black-text" href="#">18006750</a></li>
+                    <li>Facebook: <a class="black-text" href="#">D&T Shop</a></li>
+                    <li>Instagram: <a class="black-text" href="https://www.instagram.com/instagram/">Instagram</a></li>
+                    <li>Skype: <a class="black-text" href="#">Skype</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p class="bold-text-28px mt-16px">Policy</p>
+                <ul class="footer-policy mt-24px">
+                    <li>Terms of Service</li>
+                    <li>Return Policy</li>
+                    <li>Return Policy</li>
+                    <li>Shopping guide</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p class="bold-text-28px mt-16px">Instruct</p>
+                <ul class="footer-instruct mt-24px">
+                    <li>Introduce</li>
+                    <li>Product</li>
+                    <li>News</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="pull-right mr-36px">
+                <span onclick="topFunction()" id="back-to-top">BACK TO TOP <span class="ti-arrow-up"></span></span>
+            </div>
         </div>
     </div>
+
+    <script>
+        // let top = document.getElementById("back-to-top");
+        // window.onscroll = function() {scrollFunction()};
+        // function scrollFunction() {
+        // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        //     top.style.display = "inline-block";
+        // }   else {
+        //     top.style.display = "none";
+        //     }
+        // }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="./js/products.js"></script>              
+    <script src="./js/home.js"></script>
 </body>
 </html>
