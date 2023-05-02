@@ -359,3 +359,31 @@ ul.outstanding-menu li:hover {
      background-color: #EF6FA6;
 
 }
+
+#blog .blog-note {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+#footer {
+    margin-top: 20px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+#footer .footer-logo{
+    width: 60px;
+    margin-left: 64px;
+    margin-bottom: 12px;
+}
+/* 
+#back-to-top{
+    display: block;
+    position: fixed;
+} */
+
+#footer .pull-right #back-to-top:hover{
+    color: #FFC0C7;
+    cursor: pointer;
+}
