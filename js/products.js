@@ -8,8 +8,6 @@
     {id:6,name:'Blue denim jacket',cat:'Jacket',brand:'Gucci',desc:'abcdyzy',price:'$29.0',img:'./figma/product-img3.jpg'},
     {id:7,name:'Gray cotton pants',cat:'Pant',brand:'Gucci',desc:'abcdyzy',price:'$37.0',img:'./figma/pant-img1.jpg'},
     {id:8,name:'Blue Denim Jacket',cat:'Jacket',brand:'Gucci',desc:'abcdyzy',price:'$25.0',img:'./figma/denim2.jpg'},
-    
-
 ]
 
 //mang san pham outstanding
@@ -29,3 +27,8 @@ const productsOutStanding =[
     
 
 ]
+const cartProducts =[
+
+
+]
+
