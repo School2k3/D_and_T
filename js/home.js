@@ -10,7 +10,7 @@ function readerProductbestseller(){
                                 <a href="./detail.html" class="produuct-thumb" onclick="saveIdProducts(${item.id})">
                                     <img src="${item.img}" alt="">
                                 </a>
-                                <a href="" class="buy-now " >Buy Now</a>
+                                <a href="" id="buy-now" class="buy-now " >Buy Now</a>
 
                             </div>
                             <div class="product-info">
@@ -42,7 +42,7 @@ document.getElementById('Balenciaga').onclick = function renderBalenciaga(){
                                 <a href="./detail.html" class="produuct-thumb" onclick='saveIdProducts(${item.id})'>
                                     <img src="${item.img}" alt="">
                                 </a>
-                                <a href="" class="buy-now" >Buy Now</a>
+                                <a href="" id="buy-now" class="buy-now" >Buy Now</a>
 
                             </div>
                             <div class="product-info">
@@ -73,7 +73,7 @@ document.getElementById('Gucci').onclick = function renderGucci(){
                                 <a href="./detail.html" class="produuct-thumb" onclick='saveIdProducts(${item.id})'>
                                     <img src="${item.img}" alt="">
                                 </a>
-                                <a href="" class="buy-now" >Buy Now</a>
+                                <a href="" id="buy-now" class="buy-now" >Buy Now</a>
 
                             </div>
                             <div class="product-info">
@@ -105,7 +105,7 @@ document.getElementById('Versace').onclick = function renderVersace(){
                                 <a href="./detail.html" class="produuct-thumb" onclick='saveIdProducts(${item.id})'>
                                     <img src="${item.img}" alt="">
                                 </a>
-                                <a href="" class="buy-now" >Buy Now</a>
+                                <a href="" id="buy-now" class="buy-now" >Buy Now</a>
 
                             </div>
                             <div class="product-info">
@@ -136,7 +136,7 @@ document.getElementById('FearofGod').onclick = function renderFearofGod(){
                                 <a href="./detail.html" class="produuct-thumb onclick='saveIdProducts(${item.id})'">
                                     <img src="${item.img}" alt="">
                                 </a>
-                                <a href="" class="buy-now" >Buy Now</a>
+                                <a href="" id="buy-now" class="buy-now" >Buy Now</a>
 
                             </div>
                             <div class="product-info">
@@ -167,7 +167,7 @@ document.getElementById('Sadboiz').onclick = function renderSadBoiz(){
                                 <a href="./detail.html" class="produuct-thumb" onclick='saveIdProducts(${item.id})'>
                                     <img src="${item.img}" alt="">
                                 </a>
-                                <a href="" class="buy-now" >Buy Now</a>
+                                <a href="" id="buy-now" class="buy-now"  >Buy Now</a>
 
                             </div>
                             <div class="product-info">
