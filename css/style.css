@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-.justify-content-space-between {
+.menu-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.justify-content-center {
+.menu-below {
     display: flex;
     justify-content: center;
     background-color: #FFC0C7;
@@ -19,7 +20,7 @@
     color: black;
 }
 
-.bold-text-28px {
+.bold-text {
     font-weight: bold;
 }
 
@@ -33,6 +34,11 @@
 
 .mr-36px {
     margin-right: 36px;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #FFC0C7;
+    width: 280px;
 }
 
 #wrapper {
@@ -83,6 +89,67 @@
 .menu-below .nav li a:hover {
     color: black;
     background-color: #FFC0C7;
+}
+
+.menu-below-mobile {
+    display: none;
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #f7f7f7;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.menu-mobile-list {
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+.menu-mobile-list li{
+    list-style-type: none;
+}
+
+.menu-mobile-list li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.nav-input:checked ~ .nav-overlay{
+    display: block;
+}
+
+.nav-input:checked ~ .menu-mobile{
+    transform: translateX(0%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
@@ -386,4 +453,56 @@ ul.outstanding-menu li:hover {
 #footer .pull-right #back-to-top:hover{
     color: #FFC0C7;
     cursor: pointer;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .menu-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #header .menu-top .menu-right {
+        width: 320px;
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 739.999999999px) {
+    .menu-left, .menu-right {
+        display: none;
+    }
+    .menu-below .nav {
+        display: none;
+    }
+    .menu-below-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+    }
+    .ti-view-list-alt {
+        color: #fff;
+        font-size: 24px;
+    }
+    .menu-below-mobile a {
+        color: white;
+    }
+    .menu-below-mobile a .ti-shopping-cart {
+        font-size: 24px;
+    }
+    .input-group {
+        width: 250px;
+    }
+    #search-input {
+        width: 212px;
+        border-radius: 12px 0 0 12px;
+    }
+    #search-button {
+        position: absolute;
+        border-radius: 0 12px 12px 0;
+    }
 }

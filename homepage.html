@@ -17,7 +17,7 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <div class="menu-top navbar justify-content-space-between">
+            <div class="menu-top navbar">
                 <div class="menu-left">
                     <ul class="nav navbar-nav">
                         <li><a href="#">Home</a></li>
@@ -43,7 +43,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="menu-below navbar justify-content-center">
+            <div class="menu-below navbar">
                 <ul class="nav navbar-nav">
                     <li><a href="#">Short</a></li>
                     <li><a href="#">Pants</a></li>
@@ -51,7 +51,39 @@
                     <li><a href="#">T-shirt</a></li>
                     <li><a href="#">Jacket</a></li>
                 </ul>
+                <div class="menu-below-mobile">
+                    <label for="nav-mobile-input" class="ti-view-list-alt"></label>
+                    <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+                    <label for="nav-mobile-input" class="nav-overlay"></label>
+                    <div class="menu-mobile">
+                        <ul class="menu-mobile-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li class="border-bottom"><a href="#">News</a></li>
+                            <li><a href="#">Short</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Underwear</a></li>
+                            <li><a href="#">T-shirt</a></li>
+                            <li class="border-bottom"><a href="#">Jacket</a></li>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Sign up</a></li>
+                        </ul> 
+                    </div>
+                    <div class="input-group">
+                        <div class="form-outline">
+                          <input id="search-input" type="search" id="form1" class="form-control" placeholder="Search" />
+                        </div>
+                        <button id="search-button" type="button" class="btn">
+                          <i class="ti-search"></i>
+                        </button>
+                      </div>
+                    <a href="#"><span class="ti-shopping-cart"></span></a>
+                </div>
+                
             </div>
+            
+            
         </div>
         
         <div id="container">
@@ -405,7 +437,7 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <p class="bold-text-28px mt-16px">Policy</p>
+                <p class="bold-text mt-16px">Policy</p>
                 <ul class="footer-policy mt-24px">
                     <li>Terms of Service</li>
                     <li>Return Policy</li>
@@ -414,7 +446,7 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <p class="bold-text-28px mt-16px">Instruct</p>
+                <p class="bold-text mt-16px">Instruct</p>
                 <ul class="footer-instruct mt-24px">
                     <li>Introduce</li>
                     <li>Product</li>
