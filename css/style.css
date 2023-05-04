@@ -506,3 +506,88 @@ ul.outstanding-menu li:hover {
         border-radius: 0 12px 12px 0;
     }
 }
+.backtotop{
+    position: fixed;
+    bottom: 40px ;
+    right: 20px;
+}
+#modal .modal-body{
+    padding: 10px 20px 15px ;
+}
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.cart table{
+    width: 100%;
+
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table thead tr th{
+    padding: 0px 20px;
+}
+.cart table td{
+   border-bottom: 1px solid #ddd;
+   padding: 12px 0px;
+   align-items: center;
+
+
+}
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+
+.price-total button{
+    color: #dedede;
+    background-color: #EF6FA6;
+    width: 80px;
+    height: 30px;
+}
+#modal-container{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+
+}
+#modal-container.show{
+    opacity: 1;
+    pointer-events: all;
+}
+#modal-container.show #modal{
+    top: 100px;
+}
+#modal{
+    background: #fff;
+    max-width: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    transition: 0.25s ease-in-out;
+
+
+}
+#modal .modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #dedede;
+
+}
+#modal .modal-header h3{
+    margin: 0px;
+}
