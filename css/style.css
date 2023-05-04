@@ -42,7 +42,7 @@
 }
 
 #wrapper {
-    height: 2000px;
+    margin-bottom: 24px;
 }
 
 .menu-top .nav li a {
@@ -455,57 +455,13 @@ ul.outstanding-menu li:hover {
     cursor: pointer;
 }
 
-/* Tablet */
-
-@media only screen and (min-width: 740px) and (max-width: 1024px) {
-    .menu-top {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #header .menu-top .menu-right {
-        width: 320px;
-    }
+.ti-angle-down {
+    float: right;
+    margin-top: -32px;
+    margin-right: 24px;
+    display: none;
 }
 
-
-/* Mobile */
-
-@media only screen and (max-width: 739.999999999px) {
-    .menu-left, .menu-right {
-        display: none;
-    }
-    .menu-below .nav {
-        display: none;
-    }
-    .menu-below-mobile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 95%;
-    }
-    .ti-view-list-alt {
-        color: #fff;
-        font-size: 24px;
-    }
-    .menu-below-mobile a {
-        color: white;
-    }
-    .menu-below-mobile a .ti-shopping-cart {
-        font-size: 24px;
-    }
-    .input-group {
-        width: 250px;
-    }
-    #search-input {
-        width: 212px;
-        border-radius: 12px 0 0 12px;
-    }
-    #search-button {
-        position: absolute;
-        border-radius: 0 12px 12px 0;
-    }
-}
 .backtotop{
     position: fixed;
     bottom: 40px ;
@@ -590,4 +546,69 @@ ul.outstanding-menu li:hover {
 }
 #modal .modal-header h3{
     margin: 0px;
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .menu-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #header .menu-top .menu-right {
+        width: 320px;
+    }
+    #blog .blog-note {
+        justify-content: space-around;
+    }
+    #footer {
+        margin-left: 80px;
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 739.999999999px) {
+    .menu-left, .menu-right {
+        display: none;
+    }
+    .menu-below .nav {
+        display: none;
+    }
+    .menu-below-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+    }
+    .ti-view-list-alt {
+        color: #fff;
+        font-size: 24px;
+    }
+    .menu-below-mobile a {
+        color: white;
+    }
+    .menu-below-mobile a .ti-shopping-cart {
+        font-size: 24px;
+    }
+    .input-group {
+        width: 250px;
+    }
+    #search-input {
+        width: 212px;
+        border-radius: 12px 0 0 12px;
+    }
+    #search-button {
+        position: absolute;
+        border-radius: 0 12px 12px 0;
+    }
+    #blog .blog-note {
+        display: none;
+    }
+    .ti-angle-down {
+        display: inline-block;
+    }
 }
